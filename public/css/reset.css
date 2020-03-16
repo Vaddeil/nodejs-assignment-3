@@ -1,0 +1,6 @@
+/* Reset margin and padding to 0 and set background color */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7f7b82;
+}

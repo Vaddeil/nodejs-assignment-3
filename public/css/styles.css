@@ -1,0 +1,89 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Text Styling */
+h1 {
+  color: #e5d0cc;
+  text-align: center;
+}
+
+h2 {
+  color: #e5d0cc;
+  text-align: center;
+}
+
+p {
+  color: #e5d0cc;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-grow: inherit;
+  justify-content: space-evenly;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #333;
+}
+
+li {
+  margin: 0 2vw;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+
+  padding: 1rem;
+
+  text-decoration: none;
+  color: #7f7b82;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #bfacb5;
+}
+
+/* Styling for current page in nav bar */
+.now {
+  color: #e5d0cc;
+  background-color: #3c080c;
+}
+
+/* Styling for images */
+img {
+  margin: auto;
+  width: 100%;
+  border-radius: 25% 10%;
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  color: #e5d0cc;
+  background-color: #333;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

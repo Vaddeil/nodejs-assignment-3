@@ -1,0 +1,16 @@
+<%- include('partials/header') %> <%- include('partials/nav') %>
+
+<main>
+  <a href="/gallery/<%= picture.id %>">
+    <figure>
+      <img src="../images/lrg/<%= picture.fileName %>" alt="<%= picture.title %>" />
+      <figcaption>
+        <h1><%= picture.attribution.credit %></h1>
+        <h2>Source Website: Lorem Picsum</h2>
+        <a href="<%= picture.attribution.url %>"></a>
+      </figcaption>
+    </figure>
+  </a>
+</main>
+
+<%- include('partials/footer') %>
