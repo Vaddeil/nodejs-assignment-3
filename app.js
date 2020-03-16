@@ -39,11 +39,11 @@ mongoose.connect(dbURI, {
 // Connect to database. Mongoose handles the asynchronous aspects internally so we don't have to.
 var db = mongoose.connection;
 
-// Set a callback in case there's an error.
+// Callback incase theres an error
 db.on("error", function(error) {
   console.log(`Connection Error: ${error.message}`);
 });
-// Set a callback to let us know we're successfully connected
+// Callback to let us know we're connected
 db.once("open", function() {
   console.log("Connected to DB...");
 });
@@ -58,7 +58,7 @@ app.get("/galleryList", function(req, res) {
 });
 
 /* ************************** */
-/* Save information to MongoDB cluster */
+/* For loop to save information to MongoDB cluster, only to be used once so that the data doesnt double */
 /* ************************** */
 // for (x of gallery) {
 //   let photos = new Pictures(x);
@@ -70,7 +70,7 @@ app.get("/galleryList", function(req, res) {
 // }
 
 /* ************************** */
-/*  Pull data from MongoDB cluster */
+/*  Pull data from MongoDB cluster to render onto page */
 /* ************************** */
 
 app.get("/gallery/:id", function(req, res) {
